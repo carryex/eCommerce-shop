@@ -99,11 +99,11 @@ export function* onSignOutStart() {
 }
 
 export function* onSignUpStart() {
-  yield takeLatest(UserActionTypes.SING_UP_START, signUp);
+  yield takeLatest(UserActionTypes.SIGN_UP_START, signUp);
 }
 
 export function* onSignUpSuccess() {
-  yield takeLatest(UserActionTypes.SING_UP_SUCCESS, signInAfterSignUp);
+  yield takeLatest(UserActionTypes.SIGN_UP_SUCCESS, signInAfterSignUp);
 }
 
 export function* userSagas() {
